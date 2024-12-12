@@ -1,3 +1,9 @@
+## Report
+- Static page, the carousels do not work (they are just images).
+- I used only one css file (should have used more ngl).
+- I think it is plenty responsive.
+- Used Components, Props, and Conditional rendering.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
