@@ -47,7 +47,7 @@ export default function Events() {
                     <div className={styles.eventLine}>&nbsp;</div>
                     <hr className={styles.eventhr} />
                     <div>&nbsp;</div>
-                    <EventCardSelected name='OQAC' info='Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis ' />
+                    <EventCardSelected name='OCAQ' info='Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis ' />
                     <EventCardSelected name='Treasure Hunt' info='Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis ' selected={true} />
                     <EventCardSelected name='Art Competition' info='Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis ' />
                 </div>
