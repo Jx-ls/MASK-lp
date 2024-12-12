@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>hue hue hue</title>
-        <meta name="description" content="i am making this hehehe" />
+        <title>MASK</title>
+        <meta name="description" content="I am made this is 20hrs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
