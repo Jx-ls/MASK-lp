@@ -1,0 +1,583 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  --red: #E43332;
+  --red-transperency: rgba(228, 51, 50, 0.9);
+  /* --red: #D61F35;
+  --red-transperency: rgba(214, 31, 53, 0.9); */
+}
+
+/* the code i am adding */
+.navbar {
+  position: fixed;
+  top: 0px;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 89px;
+  width: 100%;
+  background-color: #030303;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-template-columns: 48px 1fr 143px;
+  z-index: 100;
+}
+
+.navbarPhone {
+  display: none;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+hr.nav {
+  border: 2px solid var(--red);
+  border-radius: 5px;
+  width: 75%;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.containerNavbar {
+  margin-top: 5px;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.about {
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  height: 38px;
+}
+
+.main {
+  margin-top: 89px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 120px; */
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100vw;
+  gap: 100px;
+}
+
+.padding {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* main page */
+.intro {
+  width: 550px;
+}
+
+div.intro {
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+h1.intro {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+b.intro {
+  font-size: 48px;
+}
+
+.introButtons {
+  display: flex;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.news {
+  border: 1px solid white;
+  border-radius: 41px;
+  width: 307px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.introAbout {
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  height: 38px;
+  width: 177px;
+  gap: 20px;
+}
+
+.recentEvents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 204px;
+}
+
+.eventLine {
+  border-left: 1px solid white;
+  height: 166px;
+  width: 0px;
+}
+
+hr.eventhr {
+  display: none;
+}
+
+.events {
+  background-color: var(--red);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 10px;
+  gap: 5px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.eventCard:hover,
+.eventCardSelected {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.eventCard,
+.eventCardSelected {
+  /* background-color: #030303; */
+  width: 204px;
+  height: 204px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+p.event {
+  font-weight: normal;
+  color: #EBEBEB;
+}
+
+.btnLeft,
+.btnRight {
+  padding-bottom: 7px;
+  font-size: 50px;
+  color: #6D6D6D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #1F1F1F;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  height: fit-content;
+  position: relative;
+}
+
+.carouselComplete {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.carouselBtns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.carouselBtn {
+  background-color: rgba(255, 255, 255, .54);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.artOverlay {
+  float: left;
+  z-index: 50;
+  height: 100px;
+  width: 558px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.44);
+  font-size: 16px;
+  padding: 20px;
+  gap: 40px;
+}
+
+.artOverlayText {
+  display: flex;
+  flex-direction: column;
+}
+
+.artOverlayBtn {
+  padding: 12px;
+  border-radius: 5px;
+  background-color: var(--red);
+}
+
+.eventCarousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+}
+
+.carouselContentEvent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carouselTextEvent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 424px;
+  gap: 10px;
+}
+
+.carouselTextArt {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 333px;
+  gap: 10px;
+}
+
+.carouselArtBtn {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  height: 38px;
+  width: 177px;
+  gap: 20px;
+}
+
+.artCarousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  gap: 10px;
+  width: 100vw;
+  height: fit-content;
+  background-image: linear-gradient(var(--red-transperency), var(--red-transperency)), url("../public/art.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1.artCarousel {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+b.artCarousel {
+  font-size: 48px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.teamCard,
+.teamCardSelected {
+  background-color: #1F1F1F;
+  width: 267px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 24px;
+  padding-top: 40px;
+}
+
+.teamCardSelected {
+  background-color: var(--red);
+}
+
+.teamContentText {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.teamContentCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* main page end */
+.footer {
+  position: relative;
+  bottom: 0;
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  gap: 15px;
+  background-color: var(--red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 15px;
+}
+
+.handles {
+  display: flex;
+  gap: 14px;
+}
+
+.handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  width: 39px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .navbarPhone {
+    position: fixed;
+    top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 89px;
+    width: 100%;
+    background-color: #030303;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 48px 1fr 38px;
+    z-index: 100;
+
+  }
+
+  .about {
+    width: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  hr.about {
+    width: 15px;
+    height: 0px;
+    border: 1px solid white;
+  }
+
+  .main {
+    align-items: center;
+    padding: 30px;
+    gap: 70px;
+  }
+
+  .intro {
+    width: 85vw;
+    padding: 0px;
+  }
+
+  div.intro {
+    padding: 0px;
+  }
+
+  h1.intro {
+    font-size: 32px;
+    font-weight: normal;
+  }
+
+  b.intro {
+    font-size: 36px;
+  }
+
+  .introAbout {
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 27px;
+    height: 38px;
+    width: 177px;
+  }
+
+  .introButtons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .events {
+    width: fit-content;
+    flex-direction: column;
+    padding-bottom: 40px;
+    gap: 5px;
+  }
+
+  .eventCard {
+    display: none;
+  }
+
+  .eventCard,
+  .eventCardSelected {
+    height: 150px;
+  }
+
+  .eventCard:hover,
+  .eventCardSelected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .eventLine {
+    display: none;
+  }
+
+  hr.eventhr {
+    display: unset;
+    border: 0px;
+    border-bottom: 1px solid white;
+    width: 180px;
+  }
+
+  .btnLeft,
+  .btnRight {
+    display: none;
+  }
+
+  img.carousel {
+    width: 85vw;
+  }
+
+  .artOverlay {
+    width: 85vw;
+    gap: 5px;
+  }
+
+  .artOverlayBtn {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .eventCarousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+  }
+
+  .carouselContentEvent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img.carouselContentEvent {
+    width: 85vw;
+  }
+
+  .carouselTextEvent {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+  }
+
+  .artCarousel {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .artOverlayText {
+    font-size: 10px;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    height: fit-content;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 1170px) and (min-width: 906px) {
+  .team {
+    gap: 50px;
+  }
+
+  .teamContentCards:nth-child(3) {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 906px) and (min-width: 700px) {
+  .team {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team {
+    width: 85vw;
+  }
+}
